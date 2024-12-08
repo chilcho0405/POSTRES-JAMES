@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    min-height: 100vh; /* Asegura que el cuerpo ocupe toda la ventana */
+    display: flex;
+    flex-direction: column; /* Alinea el contenido en columna */
+}
+
+h2 {
+    text-align: center; /* Aplica a todos los títulos h2 */
+    font-size: 28px;
+    color: #6c52a5;
+    margin-bottom: 20px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #f5f5f5;
+}
+
+.header .logo h1 {
+    font-size: 24px;
+    color: #6c52a5;
+}
+
+.header .navbar a, .header .btn {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.header .btn {
+    background: #6c52a5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-content {
+    background: rgba(255, 255, 255, 0.9);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Productos */
+.productos {
+    padding: 40px 20px;
+    background-color: #f8f5f3;
+    text-align: center;
+    margin-bottom: 50px; /* Asegura espacio suficiente entre productos y footer */
+}
+
+.producto-lista {
+    display: flex; /* Alinea los elementos en una fila */
+    justify-content: center; /* Centra los productos horizontalmente */
+    gap: 20px; /* Espacio entre los productos */
+    flex-wrap: wrap; /* Permite que los productos pasen a otra línea si la pantalla es pequeña */
+    align-items: flex-start;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.producto {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 280px; /* Ancho fijo para que todos los productos sean consistentes */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.producto img {
+    width: 100%; /* Asegura que las imágenes ocupen el ancho completo del contenedor */
+    height: 150px;
+    object-fit: cover; /* Ajusta la imagen sin distorsionar */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.producto h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.producto p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.producto .btn {
+    background-color: #6c52a5;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background: #f5f5f5;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    clear: both;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: auto; /* Empuja el footer al final */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #6c52a5;
+}
+
+
